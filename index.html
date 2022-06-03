@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinkalender</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body onload="startTime()">
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <div class="contentfront">
+            <div class="month">
+              <table>
+                <tr class="orangeTr">
+                  <th class="dayEl">M</th>
+                  <th class="dayEl">T</th>
+                  <th class="dayEl">W</th>
+                  <th class="dayEl">T</th>       <!--dayEl är klassen för veckodagen som man har klickat på i kalendern-->
+                  <th class="dayEl">F</th>
+                  <th class="dayEl">S</th>
+                  <th class="dayEl">S</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th class="dateEl 1"></th>
+                  <th class="dateEl 2">1</th>
+                  <th class="dateEl 3">2</th>
+                  <th class="dateEl 4">3</th>      <!--dateEl är klassen för datumet på den dagen man har klickat på-->
+                  <th class="dateEl 5">4</th>
+                  <th class="dateEl 6">5</th>
+                  <th class="dateEl 0">6</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th class="dateEl 1">7</th>
+                  <th class="dateEl 2">8</th>
+                  <th class="dateEl 3">9</th>
+                  <th class="dateEl 4">10</th>
+                  <th class="dateEl 5">11</th>
+                  <th class="dateEl 6">12</th>
+                  <th class="dateEl 0">13</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th class="dateEl 1">14</th>
+                  <th class="dateEl 2">15</th>
+                  <th class="dateEl 3">16</th>
+                  <th class="dateEl 4">17</th>
+                  <th class="dateEl 5">18</th>
+                  <th class="dateEl 6">19</th>
+                  <th class="dateEl 0">20</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th class="dateEl 1">21</th>
+                  <th class="dateEl 2">22</th>
+                  <th class="dateEl 3">23</th>
+                  <th class="dateEl 4">24</th>
+                  <th class="dateEl 5">25</th>
+                  <th class="dateEl 6">26</th>
+                  <th class="dateEl 0">27</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th class="dateEl 1">28</th>
+                  <th class="dateEl 2">29</th>
+                  <th class="dateEl 3">30</th>
+                  <th class="dateEl 4">31</th>
+                  <th class="dateEl 5"></th>
+                  <th class="dateEl 6"></th>
+                  <th class="dateEl 0"></th>
+                </tr>
+              </table>
+            </div>
+            <div class="dates">
+              <div class="datecont">
+                <div id="date"></div>
+                <div id="day"></div>
+                <div id="month"></div>
+                <i class="fa fa-pencil edit" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="contentback">
+            <div class="backcontainer">
+              <div class="dates">
+                <div class="datecont">
+                  <div id="date1"></div>
+                  <div id="day1"></div>
+                  <div id="month1"></div>
+                  <i class="fa fa-pencil edit" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div id="button">
+                <p id="buttonText">Bekräfta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/script.js">  </script>
+
+  </body>
+
+  </html>
